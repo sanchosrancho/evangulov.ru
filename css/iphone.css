@@ -1,0 +1,52 @@
+html, body { width: auto; }
+body {
+	overflow: auto;
+}
+.header {
+	background-position: center center;
+	-webkit-background-size: 240px auto;
+	margin: 0;
+}
+.expo {
+	height: auto;
+	white-space: normal;
+}
+.expo .photo {
+	display: block;
+	margin-bottom: 2px;
+	height: auto;
+	width: 100%;
+}
+
+
+.footer {
+	font-size: 12px;
+	height: auto; 
+	min-width: inherit;
+}
+.l-footer {
+	position: relative;
+	margin-top: 16px;
+	height: 150px;
+	width: auto;
+	top: auto;
+	overflow: hidden;
+}
+
+.l-left, .l-right {
+	float: none;
+	position: absolute;
+}
+
+.l-footer .l-left {
+	top: 80px;
+	left: 0;
+}
+.l-footer .l-right {
+	top: 20px;
+	left: 20px;
+}
+.follow-me {
+	-webkit-transform: scale(1.5);
+/* 	margin-left: 50px; */
+}

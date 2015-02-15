@@ -1,0 +1,153 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+body {
+	background: white;
+	color: #222;
+	font: 14px/18px Helvetica, Arial, sans-serif;
+	padding-top: 1px;
+	margin-top: -1px;
+	overflow: hidden;
+}
+h1, h2 { margin: 0; }
+header, article, footer { display: block; }
+
+a, a:link {
+	color: #000;
+	text-decoration: underline;
+}
+a:hover, a:visited:hover {
+	color: #f03;
+	text-decoration: underline;
+}
+
+/* Fluidify */
+.header, .footer {
+	margin: 0 5%;
+	width: 90%;
+	overflow: hidden;
+}
+.header { height: 18%; min-height:  80px; }
+.footer { height: 12%;}
+.expo   { height: 70%; width: 100%; }
+
+.header {
+	background: transparent url(./../img/logo.png) -12px center no-repeat;
+	text-indent: -99999px;
+}
+
+.expo {
+	display: block;
+	margin: 0 auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	
+	height: 82%;
+	position: relative;
+}
+
+.expo .photo {
+	display: inline-block;
+	height: 82%;
+	margin: 0 1%;
+}
+.expo .photo:first-child { margin-left:  3%; }
+.expo .photo:last-child  { margin-right: 3%; }
+	
+.footer {
+	background: inherit;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+	
+	position: absolute;
+	bottom: 20px;
+	width: 101%;
+}
+
+.l-footer {
+	position: relative;
+	height: 32px;
+	margin: 0 5%;
+	margin-top: -16px;
+	top: 50%;
+	width: 90%;
+}
+
+.l-left  { display: block; float: left;  }
+.l-right { display: block; float: right; }
+
+.l-footer .l-left { padding-left: 2px; }
+
+.follow-me {
+	height: 32px;
+	overflow: hidden;
+}
+.follow-me a {
+	background: transparent url(./../img/follow-me-icons_transparent.png) left top no-repeat;
+	display: block;
+	float: left;
+	
+	margin-left: 6px;
+	height: 32px;
+	width: 32px;
+	
+	text-indent: -9999px;
+}
+.follow-me a.vkontakte { background-position:   0   top; }
+.follow-me a.twitter   { background-position: -32px top; }
+.follow-me a.flickr    { background-position: -64px top; }
+
+
+
+@media screen and (max-height: 380px), (max-width: 414px) {
+	.header {
+		background-size: auto 100%;
+		background-position: 0 center;
+		height: 18%; 
+		min-height: 5%;
+	}
+	.footer {
+		bottom: 0;
+		padding-bottom: 1%;
+	}
+}
+
+@media screen and (max-height: 340px), (max-width: 414px) {
+	.footer {
+		padding-top: 1%;
+		padding-bottom: .5%;
+		font-size: 10px;
+		line-height: 12px;
+ 		min-width:  200px;
+	}
+	.follow-me a {
+		background-size: 48px 16px;
+		height: 16px;
+		width: 16px;
+		margin-top: 5px;
+	}
+	.follow-me a.twitter   { background-position: -16px top; }
+	.follow-me a.flickr    { background-position: -32px top; }
+}
+
+
+
+
+
+
+/** Dark version */
+body {
+	background-color: #000;
+	color: #999;
+}
+.header {
+	background-image: url(./../img/logo_white.png);
+}
+a, a:link { color: #bbb; }
+a:hover, a:visited:hover { color: #fff; }
+.footer .tel { color: #eee; font-weight: normal; }
